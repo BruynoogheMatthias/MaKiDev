@@ -5,8 +5,16 @@
 
 
 var init = function () {
-
+    $('.dropdown-submenu a.drop').on("click", dropdown)
 };
 
+var dropdown = function (e) {
+
+        $(this).next('ul').toggle();
+        e.stopPropagation();
+        e.preventDefault();
+
+
+};
 
 $(document).ready(init);
