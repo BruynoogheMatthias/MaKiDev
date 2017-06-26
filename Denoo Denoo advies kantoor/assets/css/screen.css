@@ -1,0 +1,23 @@
+nav{
+    background-color: dodgerblue;
+}
+
+nav > ul > li{
+    float: left;
+    width: 7%;
+    height: 100%;
+}
+
+li:hover{
+    background-color: lightskyblue;
+}
+
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -1px;
+}
