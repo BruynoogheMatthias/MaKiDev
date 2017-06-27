@@ -23,15 +23,20 @@ li:hover{
 }
 
 a{
-    text-decoration: none !important;
+    text-decoration: none;
 }
 
 ul a{
     color: white !important;
 }
 
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
 .dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover{
-    background-color: lightskyblue !important;
+    background-color: lightskyblue;
+    text-decoration: none;
 }
 
 .dropdown-submenu {
