@@ -13,7 +13,7 @@
 <body>
 <header><img src="images/add%20logo.gif">
     <nav>
-        <ul>
+        <div><ul>
             <li><a tabindex="-1" class="Contact">Wie zijn wij
                </a></li>
             <li class="dropdown">
@@ -26,40 +26,25 @@
                             <li><a tabindex="-1" href="#">Kindersparen</a></li>
                             <li><a tabindex="-1" href="#">Leven</a></li></ul>
                     <li><a href="#" class="Pensioen" tabindex="-1">Pensioen</a></li>
-                    <li><a href="#" class="Hospitalisatie" tabindex="-1">Hospitalisatie</a></li>
-                    <li><a href="#" class="Uitvaart" tabindex="-1">Uitvaart</a></li>
-                </ul>
+                    <li class="dropdown-submenu">
+                        <a class="drop" tabindex="-1" href="#">Hospitalisatie <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a tabindex="-1" href="#" class="DKV">Plan DKV</a></li>
+                            <li><a tabindex="-1" href="#" class="Horizon">Plan Horizon</a></li>
+                    <li><a tabindex="-1" href="#" class="Clinicomfort">Plan Clinicomfort</a></li>
+            <li><a tabindex="-1" href="#" class="Clinibudget">Plan Clinibudget</a></li></ul>
+        <li><a href="#" class="Uitvaart" tabindex="-1">Uitvaart</a></li>
+
+
+
+        </ul>
             </li>
             <li>Varia</li>
             <li>Ondernemingen</li>
             <li>Maatschapijen</li>
             <li>AssurMifid</li>
             <li>Hypotheek</li>
-        </ul>
-
-        <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Tutorials
-            <span class="caret"></span></button>
-        <ul class="dropdown-menu">
-            <li><a tabindex="-1" href="#">HTML</a></li>
-            <li><a tabindex="-1" href="#">CSS</a></li>
-            <li class="dropdown-submenu">
-                <a class="test" tabindex="-1" href="#">New dropdown <span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                    <li><a tabindex="-1" href="#">2nd level dropdown</a></li>
-                    <li><a tabindex="-1" href="#">2nd level dropdown</a></li>
-                    <li class="dropdown-submenu">
-                        <a class="test" href="#">Another dropdown <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">3rd level dropdown</a></li>
-                            <li><a href="#">3rd level dropdown</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </li>
-        </ul>
-        </div>
-
-
+        </ul></div>
     </nav>
 </header>
 <section class="Contact"><h2>Wie zijn wij?</h2>

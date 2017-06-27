@@ -5,16 +5,40 @@
 
 
 var init = function () {
-    $('.dropdown-submenu a.drop').on("click", dropdown)
+    $('.dropdown-submenu>a').on("mouseenter", dropdown);
+    $('.dropdown-submenu').on("mouseleave", dropup);
+    $('.dropdown').on("mouseleave", fulldropup);
+  //  $('.dropdown-submenu>a').unbind('mouseenter mouseleave').hover(dropdown)
 };
 
 var dropdown = function (e) {
 
-        $(this).next('ul').toggle();
-        e.stopPropagation();
-        e.preventDefault();
+    $('.dropdown-submenu>ul').hide();
+    $(this).next('ul').toggle();
+    e.stopPropagation();
+    e.preventDefault();
 
 
 };
+
+var dropup = function (e) {
+
+    $('.dropdown-submenu>ul').hide();
+    $(this).next('ul').toggle();
+    e.stopPropagation();
+    e.preventDefault();
+
+
+};
+
+var fulldropup = function (e) {
+
+    //$(".dropdown.open").removeClass('open');
+    e.stopPropagation();
+    e.preventDefault();
+
+
+};
+
 
 $(document).ready(init);

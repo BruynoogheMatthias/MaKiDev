@@ -2,8 +2,8 @@ nav{
     background-color: dodgerblue;
 }
 
-nav > ul > li{
-    float: left;
+nav li{
+    display: inline-block;
     width: 7%;
     height: 100%;
 }
