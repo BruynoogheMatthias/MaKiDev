@@ -1,6 +1,6 @@
 nav{
     background-color: dodgerblue;
-    height: 2rem;
+    height: 3rem;
 }
 
 ul{
@@ -13,6 +13,8 @@ nav > ul > li{
     float: left;
     padding-left: 2%;
     padding-right: 2%;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
     height: 100%;
 }
 
