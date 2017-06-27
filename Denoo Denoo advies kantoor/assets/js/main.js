@@ -9,7 +9,19 @@ var init = function () {
     $('.dropdown-submenu>a').on("mouseenter", dropdown);
     $('.dropdown-submenu').on("mouseleave", dropup);
     $('.dropdown').on("mouseleave", calldropup);
+    $('a').on("click", contentTonen);
   //  $('.dropdown-submenu>a').unbind('mouseenter mouseleave').hover(dropdown)
+};
+
+var contentTonen = function(){
+    var name = $(this).attr("class");
+    if (name != "dropdown-toggle" && name!= "drop"){
+        $("section").addClass("hide");
+
+        $("body").find("#" + name).removeClass("hide");
+    }
+
+
 };
 
 var dropdown = function (e) {
