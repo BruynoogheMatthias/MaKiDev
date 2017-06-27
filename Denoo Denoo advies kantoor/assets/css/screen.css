@@ -30,6 +30,10 @@ ul a{
     color: white !important;
 }
 
+a:focus, a:hover {
+    text-decoration: none;
+}
+
 .dropdown:hover .dropdown-menu {
     display: block;
 }
