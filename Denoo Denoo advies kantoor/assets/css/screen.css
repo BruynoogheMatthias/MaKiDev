@@ -3,14 +3,33 @@ nav{
     height: 2rem;
 }
 
+ul{
+    list-style-type: none !important;
+    background-color: dodgerblue !important;
+    color: white !important;
+}
+
 nav > ul > li{
     float: left;
-    margin-left: 8%;
+    padding-left: 2%;
+    padding-right: 2%;
     height: 100%;
 }
 
 li:hover{
     background-color: lightskyblue;
+}
+
+a{
+    text-decoration: none !important;
+}
+
+ul a{
+    color: white !important;
+}
+
+.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover{
+    background-color: lightskyblue !important;
 }
 
 .dropdown-submenu {
