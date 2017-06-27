@@ -33,7 +33,9 @@ ul a{
 .dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover{
     background-color: lightskyblue !important;
 }
-
+.dropdown-menu{
+    top: 94%;
+}
 .dropdown-submenu {
     position: relative;
 }

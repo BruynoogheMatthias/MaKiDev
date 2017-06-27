@@ -7,7 +7,7 @@
 var init = function () {
     $('.dropdown-submenu>a').on("mouseenter", dropdown);
     $('.dropdown-submenu').on("mouseleave", dropup);
-    $('.dropdown').on("mouseleave", fulldropup);
+    $('.dropdown').on("mouseleave", calldropup);
   //  $('.dropdown-submenu>a').unbind('mouseenter mouseleave').hover(dropdown)
 };
 
@@ -31,9 +31,14 @@ var dropup = function (e) {
 
 };
 
+var calldropup = function (e) {
+    fulldropup(event)
+
+};
+
 var fulldropup = function (e) {
 
-    //$(".dropdown.open").removeClass('open');
+    $(".dropdown.open").removeClass('open');
     e.stopPropagation();
     e.preventDefault();
 
