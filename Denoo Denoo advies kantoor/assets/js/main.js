@@ -5,6 +5,7 @@
 
 
 var init = function () {
+    $('.dropdown-submenu>ul').hide();
     $('.dropdown-submenu>a').on("mouseenter", dropdown);
     $('.dropdown-submenu').on("mouseleave", dropup);
     $('.dropdown').on("mouseleave", calldropup);
@@ -37,7 +38,7 @@ var calldropup = function (e) {
 };
 
 var fulldropup = function (e) {
-
+    $('.dropdown-submenu>ul').hide();
     $(".dropdown.open").removeClass('open');
     e.stopPropagation();
     e.preventDefault();
