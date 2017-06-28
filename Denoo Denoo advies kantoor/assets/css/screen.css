@@ -3,10 +3,9 @@ nav{
     height: 3rem;
 }
 
-ul{
-    list-style-type: none !important;
-    background-color: dodgerblue !important;
-    color: white !important;
+nav ul{
+    list-style-type: none;
+    color: white;
 }
 
 nav > ul > li{
@@ -18,7 +17,7 @@ nav > ul > li{
     text-align: center;
 }
 
-li:hover{
+nav li:hover{
     background-color: lightskyblue;
 }
 
@@ -27,14 +26,19 @@ a{
 }
 
 ul a{
-    color: white !important;
+    color: white;
     width: 100%;
     height: 100%;
     display: inline-block;
 }
 
+.dropdown-menu>li>a{
+    color: white;
+}
+
 a:focus, a:hover {
     text-decoration: none;
+    color: white;
 }
 
 .dropdown:hover .dropdown-menu {
@@ -44,8 +48,10 @@ a:focus, a:hover {
 .dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover{
     background-color: lightskyblue;
     text-decoration: none;
+    color: white;
 }
 .dropdown-menu{
+    background-color: dodgerblue;
     top: 94%;
 }
 .dropdown-submenu {
