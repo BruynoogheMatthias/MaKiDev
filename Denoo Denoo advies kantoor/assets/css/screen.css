@@ -58,11 +58,17 @@ a:focus, a:hover {
     margin-top: -1px;
 }
 
+html{
+    position: relative;
+    min-height: 100%;
+}
+
 footer{
     background-color: lightskyblue;
-    position:absolute;
-    bottom:0;
-    width:100%;
+    position: absolute;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
 }
 
 hide{
