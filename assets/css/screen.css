@@ -1,22 +1,31 @@
 body{
-    background-color: #cbdaff;
+    text-align: center;
 }
-html{
-    width: 80%;
-    margin-left:auto ;
-    margin-right: auto;
-    margin-top: 1rem;
-}
-h1{
-    font-size: 3rem;
-    margin-bottom: 2rem;
-}
-a, a::before{
-    text-decoration: none;
-    font-size: 1.5rem;
-    color: black;
-}
-a::before{
-    content: "- ";
 
+ul{
+    display: flex;
+    /*justify-content: center;*/
+    height: 3rem;
+}
+
+li{
+    margin: auto;
+}
+
+li:nth-child(2){
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+li:first-child{
+    margin-right: 0;
+}
+
+li:last-child{
+    margin-left: 0;
+}
+
+section, article{
+    margin-bottom: 2%;
+    margin-top: 2%;
 }
